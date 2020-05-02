@@ -1,0 +1,31 @@
+.mainNav {
+    background-color: #4E4A59;
+    padding: 25px;
+    font-size: 24px;
+    display: flex;
+}
+
+.navLinkContainer {
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navLink {
+    color: white;
+    text-decoration: none;
+}
+
+.navLink:hover {
+    font-size: 25px;
+    text-shadow: 1px 1px 5px #000000;
+}
+
+.active {
+    color: #788E97;
+}
+
+.active:hover {
+    font-size: 24px;
+    text-shadow: none;
+}
