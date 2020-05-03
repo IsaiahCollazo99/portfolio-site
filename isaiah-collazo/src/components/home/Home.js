@@ -3,7 +3,14 @@ import React from 'react';
 const Home = () => {
     return (
         <div className="homePageContainer">
-            Home
+            <div className="aboutMe">
+                <div className="aboutMeLeft">
+
+                </div>
+                <div className="aboutMeRight">
+                    
+                </div>
+            </div>
         </div>
     )
 }

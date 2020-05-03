@@ -1,8 +1,10 @@
 .mainNav {
+    width: 100%;
     background-color: #4E4A59;
     padding: 25px;
     font-size: 24px;
     display: flex;
+    position: fixed;
 }
 
 .navLinkContainer {
