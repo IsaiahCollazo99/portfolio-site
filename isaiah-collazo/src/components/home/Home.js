@@ -1,4 +1,5 @@
 import React from 'react';
+import resume from '../../assets/Resume_Isaiah_Collazo.pdf';
 
 const Home = () => {
     return (
