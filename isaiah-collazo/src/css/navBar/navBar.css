@@ -1,6 +1,6 @@
 .mainNav {
     width: 100%;
-    background-color: #4E4A59;
+    background-color: #D96675;
     padding: 25px;
     font-size: 24px;
     display: flex;
@@ -21,27 +21,26 @@
     color: white;
     text-decoration: none;
     transition: 0.3s ease;
-    background-color: #4E4A59;
-    border-top: 4px solid #4E4A59;
-    border-bottom: 4px solid #4E4A59;
+    background-color: #D96675;
+    border-top: 4px solid #D96675;
+    border-bottom: 4px solid #D96675;
     padding: 10px 0;
 }
 
 .navLink:hover {
-    border-top: 4px solid #ffffff;
     border-bottom: 4px solid #ffffff;
     padding: 6px 0;
-    color: #101A2B
+    color: #8A333B;
 }
 
 .active {
-    color: #9EB1B7;
+    color: #AEAEAE;
 }
 
 .active:hover {
     font-size: 24px;
     text-shadow: none;
-    color: #9EB1B7;
-    border-top: 4px solid #4E4A59;
-    border-bottom: 4px solid #4E4A59;
+    color: #AEAEAE;
+    border-top: 4px solid #D96675;
+    border-bottom: 4px solid #D96675;
 }

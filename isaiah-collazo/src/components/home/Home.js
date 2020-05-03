@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from '../../assets/Resume_Isaiah_Collazo.pdf';
+import isaiah from '../../assets/image_me.jpg';
 
 const Home = () => {
     return (
@@ -9,7 +9,7 @@ const Home = () => {
 
                 </div>
                 <div className="aboutMeRight">
-                    
+                    <img src={isaiah} alt="isaiah" className="aboutMePic"/>
                 </div>
             </div>
         </div>
