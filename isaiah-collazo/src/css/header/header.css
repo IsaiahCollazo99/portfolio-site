@@ -8,9 +8,22 @@
     top: 0;
     margin-bottom: 25px;
     font-weight: bold;
-    justify-content: space-between;
+    justify-content: space-around;
+    color: white;
+}
+
+.headerLeft {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .headerRight {
-    width: 40%;
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.headerName {
+    font-size: 32px;
 }
