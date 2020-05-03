@@ -1,5 +1,6 @@
 import React from 'react';
 import isaiah from '../../assets/image_me.jpg';
+import '../../css/home/home.css';
 
 const Home = () => {
     return (
@@ -9,7 +10,7 @@ const Home = () => {
 
                 </div>
                 <div className="aboutMeRight">
-                    <img src={isaiah} alt="isaiah" className="aboutMePic"/>
+              
                 </div>
             </div>
         </div>

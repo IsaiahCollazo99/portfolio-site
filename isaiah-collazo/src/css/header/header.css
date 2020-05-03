@@ -1,0 +1,16 @@
+.header {
+    width: 100%;
+    background-color: #D96675;
+    padding: 25px 0;
+    font-size: 24px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    margin-bottom: 25px;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.headerRight {
+    width: 40%;
+}

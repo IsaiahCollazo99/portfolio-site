@@ -1,0 +1,30 @@
+/* .homePageContainer {
+    width: 80%;
+    align-self: center;
+    display: flex;
+}
+
+.aboutMe {
+    display: grid;
+    grid-template-columns: 2fr 0.5fr 2fr;
+}
+
+.aboutMeLeft {
+    grid-column: 1 / 2;
+    border: 3px solid #283C4B;
+    padding: 20px;
+}
+
+.aboutMeRight {
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: center;
+    border: 3px solid #283C4B;
+    background-color: #283C4B;
+    box-shadow: 3px 3px 0 black;
+    padding: 20px;
+}
+
+.aboutMePic {
+    width: 50%;
+} */

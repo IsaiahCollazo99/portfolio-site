@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
-import NavBar from './components/navBar/NavBar';
 import { Switch, Route } from 'react-router-dom';
 import Home from './components/home/Home';
 import Projects from './components/projects/Projects';
+import Header from './components/header/Header';
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
+      <Header />
       <Switch>
         <Route exact path={"/"}>
           <Home />
