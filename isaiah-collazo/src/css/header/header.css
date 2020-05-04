@@ -7,7 +7,6 @@
     position: sticky;
     top: 0;
     margin-bottom: 25px;
-    font-weight: bold;
     justify-content: space-around;
     color: white;
 }
@@ -32,9 +31,16 @@
 }
 
 .headerName {
+    font-weight: bold;
     font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.headerJob {
+    color: #AEAEAE;
 }
 
 .headerLogo {
     width: 100px;
+    border-radius: 25px;
 }
