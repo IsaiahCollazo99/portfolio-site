@@ -9,7 +9,7 @@ const NavBar = () => {
             <div className="navLinkContainer">
                 <NavLink exact to="/" className="navLink">ME</NavLink>
                 <NavLink exact to="/projects" className="navLink">PROJECTS</NavLink>
-                <a className="navLink" href={resume} target="_blank">RESUME</a>
+                <a className="navLink lastNav" href={resume} target="_blank">RESUME</a>
             </div>
         </nav>
     )
