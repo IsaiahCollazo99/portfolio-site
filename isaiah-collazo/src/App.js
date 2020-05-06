@@ -1,15 +1,27 @@
 import React from 'react';
 import './App.css';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, useLocation } from 'react-router-dom';
 import Home from './components/home/Home';
 import Projects from './components/projects/Projects';
 import Header from './components/header/Header';
 import Contact from './components/contact/Contact';
+import homeBackground from './assets/home_background.jpg';
 
 function App() {
+  const location = useLocation();
+  let background;
+  let className;
+
+  if(location.pathname === "/") {
+    background = homeBackground;
+    className = "homeBackground"
+  }
+  
   return (
     <div className="App">
       <Header />
+      <img src={background} className={className} alt=""/>
+
       <Switch>
         <Route exact path={"/"}>
           <Home />
