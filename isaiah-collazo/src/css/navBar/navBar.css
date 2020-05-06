@@ -15,12 +15,26 @@
 
 .navLink {
     color: white;
-    text-decoration: none;
-    transition: 0.3s ease;
     background-color: #D96675;
-    border-top: 4px solid #D96675;
     border-bottom: 4px solid #D96675;
     padding: 10px 0;
+    text-decoration: none;
+    transition: 0.3s ease;
+    animation: navLoad 2.5s ease 0s 1;
+}
+
+@keyframes navLoad {
+    from {    
+        border-bottom: 4px solid #ffffff;
+        padding: 6px 0;
+        color: #8A333B;
+    }
+
+    to {
+        color: white;
+        border-bottom: 4px solid #D96675;
+        padding: 10px 0;
+    }
 }
 
 .navLink:hover {
@@ -31,6 +45,7 @@
 
 .active {
     color: #AEAEAE;
+    animation: none;
 }
 
 .active:hover {
