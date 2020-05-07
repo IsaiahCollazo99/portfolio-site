@@ -46,3 +46,15 @@
     width: 100px;
     border-radius: 25px;
 }
+
+.noDecoration {
+    text-decoration: none;
+}
+
+.white {
+    color: #FFFFFF;
+}
+
+.grey {
+    color: #AEAEAE;
+}

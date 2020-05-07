@@ -49,10 +49,7 @@
 }
 
 .active:hover {
-    font-size: 24px;
-    text-shadow: none;
     color: #AEAEAE;
-    border-top: 4px solid #D96675;
     border-bottom: 4px solid #D96675;
     padding: 10px 0px;
 }
