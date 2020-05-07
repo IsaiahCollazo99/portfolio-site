@@ -7,7 +7,7 @@ const Home = () => {
         <div className="homePageContainer">
             <div className="aboutMe">
                 <div className="aboutMePic">
-                    <img src={isaiah} alt="isaiah" className="aboutMeImg" />
+                    <a href="https://www.instagram.com/theycallme_zay_/" target="_blank"><img src={isaiah} alt="isaiah" className="aboutMeImg" /></a>
                 </div>
 
                 <div className="aboutMeText">
