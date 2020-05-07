@@ -58,3 +58,57 @@
 .grey {
     color: #AEAEAE;
 }
+
+@media only screen and (max-width: 1550px) {
+    .headerRight {
+      width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .header {
+      font-size: 18px;
+    }
+
+    .headerName {
+        font-size: 24px;
+    }
+
+    .headerLogo {
+        width: 75px;
+    }
+}
+
+@media only screen and (max-width: 1028px) {
+    .headerRight {
+      width: 50%;
+    }
+
+    .headerLeft {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    .header {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .headerName {
+        font-size: 14px;
+    }
+
+    .headerLogo {
+        display: none;
+    }
+
+    .headerLeft {
+        width: 30%;
+        justify-content: center;
+    }
+
+    .headerRight {
+        width: 67%;
+    }
+}

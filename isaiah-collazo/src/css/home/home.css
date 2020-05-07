@@ -23,6 +23,7 @@
 }
 
 .aboutMe {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -63,4 +64,47 @@
 .aboutMePgraph {
     letter-spacing: 2px;
     line-height: 130%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .aboutMeText {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 1028px) {
+    .homeBackground {
+        width: fit-content;
+        align-self: center;
+        bottom: 0;
+    }
+
+    .aboutMeText {
+        height: fit-content;
+    }
+
+    .aboutMePic {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .aboutMePgraph {
+        line-height: 115%;
+    }
+
+    .aboutMeText {
+        height: 450px;
+        width: 85%;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .aboutMe {
+        margin-left: 7px;
+    }
+
+    .aboutMePic {
+        width: 65%;
+    }
 }
