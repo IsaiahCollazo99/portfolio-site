@@ -6,6 +6,7 @@ import Projects from './components/projects/Projects';
 import Header from './components/header/Header';
 import Contact from './components/contact/Contact';
 import homeBackground from './assets/home_background.jpg';
+import contactBackground from './assets/contact_background.jpg';
 
 function App() {
   const location = useLocation();
@@ -15,6 +16,9 @@ function App() {
   if(location.pathname === "/") {
     background = homeBackground;
     className = "homeBackground"
+  } else if(location.pathname === "/contact") {
+    background = contactBackground;
+    className = "contactBackground";
   }
   
   return (

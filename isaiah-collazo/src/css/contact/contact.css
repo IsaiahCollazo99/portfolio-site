@@ -1,0 +1,35 @@
+.contactBackground {
+    position: fixed;
+    z-index: 1;
+    justify-self: center;
+    width: 100%;
+    opacity: 70%;
+}
+
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    z-index: 7;
+}
+
+.contactPic {
+    justify-self: center;
+    width: 80%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.contactImgAnchor {
+    width: 30%;
+}
+
+.contactImg {
+    width: 100%;
+    border: 3px solid #283C4B;
+    border-radius: 20px;
+}
