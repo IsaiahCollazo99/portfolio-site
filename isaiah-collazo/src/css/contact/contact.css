@@ -33,3 +33,22 @@
     border: 3px solid #283C4B;
     border-radius: 20px;
 }
+
+.socialMedia {
+    height: 100px;
+    background-color: white;
+    width: 80%;
+    align-self: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.linkedIn {
+    z-index: 20;
+    height: 100%;
+}
+
+.linkedIn:first-child {
+    height: 100%;
+}

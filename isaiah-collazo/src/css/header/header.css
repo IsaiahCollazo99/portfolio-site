@@ -10,7 +10,7 @@
     justify-content: space-between;
     color: white;
     font-family: 'Raleway', sans-serif;
-    z-index: 7;
+    z-index: 100;
 }
 
 .headerLeft {
