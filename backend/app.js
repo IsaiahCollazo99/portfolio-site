@@ -70,7 +70,7 @@ app.post("/api/send", (req, res) => {
 })
 
 app.get("/", (req, res) => {
-  res.json("Hello World");
+  res.json("Hello Worlds");
 })
 
 app.listen(port, () => {
