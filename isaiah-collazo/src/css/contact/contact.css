@@ -8,47 +8,170 @@
 
 .contactContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-self: center;
     justify-self: center;
+    justify-content: space-evenly;
     width: 100%;
     z-index: 7;
 }
 
 .contactPic {
     justify-self: center;
-    width: 80%;
+    width: 25%;
     align-self: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center
 }
 
 .contactImgAnchor {
-    width: 30%;
+    width: 100%;
 }
 
 .contactImg {
     width: 100%;
-    border: 3px solid #283C4B;
+    border: 3px solid #673639;
     border-radius: 20px;
 }
 
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    background-color: #4E4A59;
+    border: 3px solid #283C4B;
+    
+    width: 100%;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.contactEmail {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Raleway";
+}
+
 .socialMedia {
-    height: 100px;
-    background-color: white;
-    width: 80%;
+    width: 100%;
     align-self: center;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
-.linkedIn {
+.icon {
     z-index: 20;
-    height: 100%;
 }
 
-.linkedIn:first-child {
-    height: 100%;
+.emailForm {
+    background-color: #4E4A59;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 25px;
+    border-radius: 25px;
+    border: 3px solid #283C4B;
+    justify-content: center;
+}
+
+.userInfo {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr;
+    margin-bottom: 25px;
+}
+
+.nameLabel {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.emailLabel {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+.nameInput {
+    width: 90%;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.emailInput {
+    width: 90%;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.formMessage {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+label {
+    color: white;
+    font-family: 'Raleway';
+    margin-bottom: 5px;
+    margin-left: 5px;
+    letter-spacing: 2px;
+}
+
+input[type=submit] {
+    width: fit-content;
+    align-self: center;
+    background-color:#283c4b;
+	border-radius:28px;
+	border:3px solid #673639;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:18px;
+	padding: 20px;
+    text-shadow:0px 1px 0px black;
+}
+
+input[type=submit]:hover {
+    background-color: #673639;
+    border-color: #283C4B;
+}
+
+input[type=submit]:active {
+	position:relative;
+	top:1px;
+}
+
+
+input[type="text"], input[type="email"], textarea {
+    padding: 8px;
+    font-size: 18px;
+    border-width: 3px;
+    border-color: #673639;
+    background-color: #283c4b;
+    color: #ffffff;
+    border-style: solid;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(66,66,66,.94);
+    letter-spacing: 2px;
+    line-height: 130%;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.success {
+    color: green;
+    margin-bottom: 10px;
+}
+
+.fail { 
+    color: red;
+    margin-bottom: 10px;
 }

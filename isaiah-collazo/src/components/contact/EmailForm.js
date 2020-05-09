@@ -19,20 +19,33 @@ const EmailForm = ({ onFormSubmit, emailSuccess }) => {
     }
     
     return (
-        <form className="emailForm" onSubmit= {(e) => {
+        <form className="emailForm" autoComplete="off" onSubmit= {(e) => {
             e.preventDefault();
             onFormSubmit(useName.value, useEmail.value, useMessage.value);
         }} name="emailForm">
-            <label for="name">Name: </label>
-            <input type="text" {...useName} placeholder="Enter Your Name" name="name" required/>
 
-            <label for="email">Email: </label>
-            <input type="email" {...useEmail} placeholder="Enter Your Email" name="email" required/>
+            { emailSuccess ?
+                <label for="userInfo" className="success">Email successfuly sent!</label> : null
+            }
 
-            <label for="message">Enter Your Message: </label>
-            <input type="text" {...useMessage} placeholder="Enter Your Message" name="message" required/>
+            { emailSuccess === false ? 
+                <label for="userInfo" className="fail">Email not successful</label> : null
+            } 
 
-            <input type="submit" />
+            <div className="userInfo">
+                <label for="name" className="nameLabel">Name: </label>
+                <input type="text" {...useName} placeholder="Enter Your Name" name="name" required className="nameInput"/>
+
+                <label for="email" className="emailLabel">Email: </label>
+                <input type="email" {...useEmail} placeholder="Enter Your Email" name="email" required className="emailInput"/>
+            </div>
+
+            <div className="formMessage">
+                <label for="message">Message: </label>
+                <textarea {...useMessage} placeholder="Enter Your Message" name="message" required rows="20" cols="30"/>
+            </div>
+
+            <input type="submit" value="Send Message"/>
         </form>
     )
 }
