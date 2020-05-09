@@ -5,7 +5,7 @@ const nodemailer = require("nodemailer");
 require("dotenv").config();
 const creds = require("./config");
 
-const port = process.env.PORT || 3001;
+const port = process.env.PORT;
 
 const app = express()
 

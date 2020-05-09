@@ -4,8 +4,18 @@
   "description": "A personal website for all things Isaiah Collazo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd backend && npm install && npm start"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IsaiahCollazo99/portfolio-site.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/IsaiahCollazo99/portfolio-site/issues"
+  },
+  "homepage": "https://github.com/IsaiahCollazo99/portfolio-site#readme"
 }
