@@ -69,6 +69,10 @@ app.post("/api/send", (req, res) => {
   })
 })
 
+app.get("/", (req, res) => {
+  res.json("Hello World");
+})
+
 app.listen(port, () => {
     console.log(`Server Is Running On Port:${port}`);
 });
