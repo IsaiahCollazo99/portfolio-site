@@ -1,24 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import isaiah from '../../assets/image_contact.JPG';
 import { FaLinkedin, FaJsSquare, FaGithubSquare } from 'react-icons/fa';
 import '../../css/contact/contact.css';
 import EmailForm from './EmailForm';
-import axios from 'axios';
-import { getAPI } from '../../util/util';
 
 const Contact = () => {
-    const [emailSuccess, setEmailSuccess] = useState();
-    const API = getAPI();
-
-    const onFormSubmit = async (name, email, message) => {
-        let res = await axios.post(`${API}/send`, {name, email, message});
-        const { status } = res.data;
-        if(status === "success") {
-            setEmailSuccess(true);
-        } else {
-            setEmailSuccess(false);
-        }
-    }
     
     return (
         <div className="contactContainer">
@@ -37,7 +23,7 @@ const Contact = () => {
 
             </div>
 
-            <EmailForm onFormSubmit={onFormSubmit} emailSuccess={emailSuccess}/>
+            <EmailForm />
         </div>
     )
 }

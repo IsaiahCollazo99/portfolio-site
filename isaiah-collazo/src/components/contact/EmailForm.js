@@ -1,43 +1,20 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useInput } from '../../util/customHooks/custhomHooks';
 
-const EmailForm = ({ onFormSubmit, emailSuccess }) => {
+const EmailForm = () => {
     const useName = useInput("");
     const useEmail = useInput("");
     const useMessage = useInput("");
 
-    useEffect(() => {
-        if(emailSuccess) {
-            resetForm();
-        }
-    })
-
-    const resetForm = () => {
-        useName.onChange({target: { value: "" }})
-        useEmail.onChange({target: { value: "" }})
-        useMessage.onChange({target: { value: "" }})
-    }
-    
     return (
-        <form className="emailForm" autoComplete="off" onSubmit= {(e) => {
-            e.preventDefault();
-            onFormSubmit(useName.value, useEmail.value, useMessage.value);
-        }} name="emailForm">
-
-            { emailSuccess ?
-                <label for="userInfo" className="success">Email successfuly sent!</label> : null
-            }
-
-            { emailSuccess === false ? 
-                <label for="userInfo" className="fail">Email not successful</label> : null
-            } 
+        <form className="emailForm" autoComplete="off" action="https://formspree.io/mjvaklbn" method="POST" name="emailForm">
 
             <div className="userInfo">
                 <label for="name" className="nameLabel">Name: </label>
                 <input type="text" {...useName} placeholder="Enter Your Name" name="name" required className="nameInput"/>
 
-                <label for="email" className="emailLabel">Email: </label>
-                <input type="email" {...useEmail} placeholder="Enter Your Email" name="email" required className="emailInput"/>
+                <label for="_replyto" className="emailLabel">Email: </label>
+                <input type="email" {...useEmail} placeholder="Enter Your Email" name="_replyto" required className="emailInput"/>
             </div>
 
             <div className="formMessage">
