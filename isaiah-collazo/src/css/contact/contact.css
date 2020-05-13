@@ -17,9 +17,7 @@
 }
 
 .contactPic {
-    justify-self: center;
     width: 25%;
-    align-self: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -166,12 +164,104 @@ textarea {
     resize: none;
 }
 
-.success {
-    color: green;
-    margin-bottom: 10px;
+@media only screen and (max-width: 2200px) {
+    .contactBackground {
+        width: 130%;
+    }
 }
 
-.fail { 
-    color: red;
-    margin-bottom: 10px;
+@media only screen and (max-width: 1600px) {
+    .contactBackground {
+        width: 170%;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    .emailForm {
+        width: 40%;
+    }
+
+    .contactPic {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 1230px) {
+    .contactContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contactPic {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contactImgAnchor {
+        width: 30%;
+    }
+
+    .contactInfo {
+        width: 50%;
+    }
+
+    .contactBackground {
+        width: 185%;
+    }
+
+    .emailForm {
+        width: 80%;
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .contactBackground {
+        width: 200%;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .userInfo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .emailLabel {
+        margin-top: 25px;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .contactPic {
+        flex-direction: column;
+    }
+
+    .contactImgAnchor {
+        width: 50%;
+    }
+    
+    .contactInfo {
+        width: fit-content;
+    }
+
+    .contactEmail {
+        font-size: 20px;
+    }
+
+    .socialMedia {
+        justify-content: space-evenly;
+    }
+
+    .emailForm {
+        margin-top: 10px;
+    }
+
+    .contactBackground {
+        width: 350%;
+    }
 }
