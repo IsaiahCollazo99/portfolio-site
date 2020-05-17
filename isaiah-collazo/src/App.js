@@ -10,21 +10,21 @@ import contactBackground from './assets/contact_background.jpg';
 
 function App() {
   const location = useLocation();
-  let background;
-  let className;
+
+  let appBackground = {
+    backgroundImage: null,
+    backgroundSize: "cover"
+  }
 
   if(location.pathname === "/") {
-    background = homeBackground;
-    className = "homeBackground"
+    appBackground.backgroundImage = "url(" + homeBackground + ")";
   } else if(location.pathname === "/contact") {
-    background = contactBackground;
-    className = "contactBackground";
+    appBackground.backgroundImage = "url(" + contactBackground + ")";
   }
   
   return (
-    <div className="App">
+    <div className="App" style={appBackground}>
       <Header />
-      <img src={background} className={className} alt=""/>
 
       <Switch>
         <Route exact path={"/"}>
