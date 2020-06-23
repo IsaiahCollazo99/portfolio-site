@@ -1,6 +1,7 @@
 import React from 'react';
 import ProjectItem from './ProjectItem';
 import projectsList from '../../util/projectsList';
+import '../../css/projects/projects.css';
 
 const Projects = () => {
     const getProjectComponents = () => {

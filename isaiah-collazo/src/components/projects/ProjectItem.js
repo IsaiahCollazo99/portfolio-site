@@ -1,6 +1,7 @@
 import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import '../../css/projects/projectItems.css';
 
 const ProjectItem = ({ project }) => {
     const {
@@ -18,7 +19,7 @@ const ProjectItem = ({ project }) => {
         if(images.length) {
             imagesList = images.map((image, i) => {
                 return (
-                    <div key={i}>
+                    <div key={i} className="imageWrapper">
                         <img src={image} alt={name}/>
                         <p className="legend">{i + 1}</p>
                     </div>
