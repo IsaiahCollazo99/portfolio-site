@@ -7,7 +7,7 @@ const Projects = () => {
         const projectListComponent = [];
         for(let key in projectsList) {
             const projectObj = projectsList[key];
-            projectListComponent.push(<ProjectItem project={projectObj} />);
+            projectListComponent.push(<ProjectItem project={projectObj} key={key}/>);
         }
         return projectListComponent;
     }

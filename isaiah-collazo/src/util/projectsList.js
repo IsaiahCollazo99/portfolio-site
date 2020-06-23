@@ -10,7 +10,7 @@ export default {
         `,
         deploymentUrl: "https://flutter-twitter.netlify.app/",
         githubRepo: "https://github.com/IsaiahCollazo99/Flutter",
-        images: ["../assets/projectPictures/flutter/logo.png"],
+        images: ["https://i.imgur.com/GqHVbku.png"],
         technologies: [
             "ReactJS",
             "Express",
@@ -32,7 +32,7 @@ export default {
         `,
         deploymentUrl: "",
         githubRepo: "https://github.com/IsaiahCollazo99/ttnn",
-        images: ["../assets/projectPictures/techTonic/logo.png"],
+        images: ["https://i.imgur.com/N407zjw.png"],
         technologies: [
             "ReactJS",
             "Express",
@@ -68,7 +68,7 @@ export default {
         `,
         deploymentUrl: "",
         githubRepo: "https://github.com/IsaiahCollazo99/Our-Canvas",
-        images: ["../assets/projectPictures/ourCanvas/logo.png"],
+        images: ["https://i.imgur.com/tupzzJc.png"],
         technologies: [
             "ReactJS",
             "NodeJS",
