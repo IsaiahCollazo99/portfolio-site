@@ -6,14 +6,16 @@ const ProjectItem = ({ project }) => {
         description,
         deploymentUrl,
         githubRepo,
-        image
+        images,
+        technologies
     } = project;
 
     return (
         <div className="projectItem">
             <div className="projectItemLeft">
                 {/* maybe float left instead of div */}
-                <img src={image} alt={name} />  
+                {/* <img src={image} alt={name} />   */}
+                {/* Create a carousel of all images */}
             </div>
 
             <div className="projectItemRight">
