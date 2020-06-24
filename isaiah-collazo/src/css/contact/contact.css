@@ -31,6 +31,11 @@
     max-width: 80%;
     border: 3px solid #e75557;
     border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.contactPic img:hover {
+    border-color: #37A8FF;
 }
 
 .contactInfo {
@@ -49,12 +54,20 @@
     font-family: "Raleway";
 }
 
+.contactEmail:hover {
+    color: #37A8FF;
+}
+
 .socialMedia {
     width: 100%;
     align-self: center;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.icon:hover {
+    text-decoration: underline;
 }
 
 .emailForm {
@@ -160,6 +173,7 @@ input:focus, textarea:focus {
 
 textarea {
     resize: none;
+    font-family: sans-serif;
 }
 
 @media only screen and (max-width: 2200px) {

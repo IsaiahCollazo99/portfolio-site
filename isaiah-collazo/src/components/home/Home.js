@@ -4,6 +4,11 @@ import '../../css/home/home.css';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
+
+    const directToTwitter = () => {
+        window.open("https://twitter.com/IsaiahCollazo8");
+    }
+    
     return (
         <div className="homePageContainer">
             <div className="aboutMe">
@@ -12,7 +17,9 @@ const Home = () => {
                 </a>
 
                 <div className="aboutMeText">
-                    <h1 className="aboutMeTitle">This is me</h1>
+                    <h1 className="aboutMeTitle" onClick={directToTwitter}>
+                        This is me
+                    </h1>
                     <div className="aboutMePgraph">
                         For as long as I can remember I've been writing down ideas for apps and games that I wanted to make some day, not really knowing the path to get there.
                         It wasn't until high school that I found the game development software, RPG Maker. That began my love for problem solving. RPG Maker was built using JavaScript and 

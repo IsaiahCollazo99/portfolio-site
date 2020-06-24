@@ -1,13 +1,10 @@
 .App {
   font-family: 'Advent Pro', sans-serif;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   min-height: 100vh;
   background-color: #1b272f;
-}
-
-textarea {
-	font-family: 'Advent Pro', sans-serif;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
