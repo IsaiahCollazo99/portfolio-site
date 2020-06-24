@@ -1,6 +1,7 @@
 import React from 'react';
 import isaiah from '../../assets/image_me.jpg';
 import '../../css/home/home.css';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -26,6 +27,9 @@ const Home = () => {
                     
                 </div>
             </div>
+            <Link to="/projects" className="callToAction">
+                <button>View My Work</button>
+            </Link>
         </div>
     )
 }
