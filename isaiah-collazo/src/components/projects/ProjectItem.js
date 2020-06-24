@@ -36,6 +36,7 @@ const ProjectItem = ({ project, display }) => {
     }
 
     const imagesList = getImagesList();
+    
     const techList = technologies.map((tech, i) => {
         return (
             <li key={i}>{tech}</li>

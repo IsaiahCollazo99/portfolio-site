@@ -9,8 +9,8 @@ const Contact = () => {
     return (
         <div className="contactContainer">
             <div className="contactPic">
-                <a href="https://www.linkedin.com/in/isaiah-collazo-aa0188151/" target="_blank" className="contactImgAnchor" rel="noopener noreferrer">
-                    <img src={isaiah} alt="isaiah" className="contactImg"/>
+                <a href="https://www.linkedin.com/in/isaiah-collazo-aa0188151/" className="contactPicAnchor" target="_blank" rel="noopener noreferrer">
+                    <img src={isaiah} alt="isaiah"/>
                 </a>
                 <div className="contactInfo">
 
@@ -18,10 +18,10 @@ const Contact = () => {
                     
                     <div className="socialMedia">
                         <a href="https://www.linkedin.com/in/isaiah-collazo-aa0188151/" target="_blank" rel="noopener noreferrer">
-                            <FaLinkedin className="icon" size="100px" color="#0077B5"/>
+                            <FaLinkedin className="icon" size="75px" color="#0077B5"/>
                         </a>
                         <a href="https://github.com/IsaiahCollazo99" target="_blank" rel="noopener noreferrer">
-                            <FaGithubSquare className="icon" size="100px" color="#24292E"/>
+                            <FaGithubSquare className="icon" size="75px" color="#24292E"/>
                         </a>
                     </div>
                 </div>

@@ -6,6 +6,10 @@
   background-color: #1b272f;
 }
 
+textarea {
+	font-family: 'Advent Pro', sans-serif;
+}
+
 body {
 	background-color: #F3F3F3;
 }

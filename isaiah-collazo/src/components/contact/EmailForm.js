@@ -19,7 +19,7 @@ const EmailForm = () => {
 
             <div className="formMessage">
                 <label for="message">Message: </label>
-                <textarea {...useMessage} placeholder="Enter Your Message" name="message" required rows="20" cols="30"/>
+                <textarea {...useMessage} placeholder="Enter Your Message" name="message" required rows="10" cols="30"/>
             </div>
 
             <input type="submit" value="Send Message"/>
