@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <div className="homePageContainer">
             <div className="aboutMe">
-                <a href="https://www.instagram.com/theycallme_zay_/" target="_blank">
+                <a href="https://www.instagram.com/theycallme_zay_/" target="_blank" rel="noopener noreferrer">
                     <img src={isaiah} alt="isaiah" className="aboutMeImg" />
                 </a>
 

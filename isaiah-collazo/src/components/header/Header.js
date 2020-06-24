@@ -11,8 +11,12 @@ const Header = () => {
                 <Link to="/"><img src={logo} alt="Logo" className="headerLogo" /></Link>
                 
                 <div className="headerText">
-                    <a href="https://www.linkedin.com/in/isaiah-collazo-aa0188151/" target="_blank" className="noDecoration white"><p className="headerName">Isaiah Collazo</p></a>
-                    <a href="https://en.wikipedia.org/wiki/Web_developer" target="_blank" className="noDecoration grey"><p className="headerJob">Web Developer</p></a>
+                    <a href="https://www.linkedin.com/in/isaiah-collazo-aa0188151/" target="_blank" className="noDecoration white" rel="noopener noreferrer">
+                        <p className="headerName">Isaiah Collazo</p>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/Web_developer" target="_blank" className="noDecoration grey" rel="noopener noreferrer">
+                        <p className="headerJob">Web Developer</p>
+                    </a>
                 </div>
             </div>
 

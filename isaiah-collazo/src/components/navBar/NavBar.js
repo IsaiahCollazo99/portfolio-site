@@ -10,7 +10,7 @@ const NavBar = () => {
                 <NavLink exact to="/" className="navLink">ME</NavLink>
                 <NavLink exact to="/projects" className="navLink">MY WORK</NavLink>
                 <NavLink to="/contact" className="navLink">CONTACT</NavLink>
-                <a className="navLink lastNav" href={resume} target="_blank">RESUME</a>
+                <a className="navLink lastNav" href={resume} target="_blank" rel="noopener noreferrer">RESUME</a>
             </div>
         </nav>
     )
