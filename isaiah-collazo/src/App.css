@@ -2,7 +2,8 @@
   font-family: 'Advent Pro', sans-serif;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
+  background-color: #1b272f;
 }
 
 body {

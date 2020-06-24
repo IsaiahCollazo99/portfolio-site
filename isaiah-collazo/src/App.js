@@ -20,10 +20,14 @@ function App() {
     appBackground.backgroundImage = "url(" + homeBackground + ")";
   } else if(location.pathname === "/contact") {
     appBackground.backgroundImage = "url(" + contactBackground + ")";
+  } else if(location.pathname === "/projects") {
+    appBackground = {
+      "background-color": "#1b272f"
+    }
   }
   
   return (
-    <div className="App" style={appBackground}>
+    <div className="App">
       <Header />
 
       <Switch>

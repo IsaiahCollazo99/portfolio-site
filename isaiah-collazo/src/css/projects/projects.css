@@ -1,6 +1,6 @@
 .projectsPageContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     width: 90%;
     align-self: center;
 }

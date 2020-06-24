@@ -16,8 +16,8 @@
 
 .navLink {
     color: white;
-    background-color: #283c4b;
-    border-bottom: 4px solid #283c4b;
+    background-color: #2f4e66;
+    border-bottom: 4px solid #2f4e66;
     padding: 10px 0;
     text-decoration: none;
     transition: 0.3s ease;
@@ -36,6 +36,6 @@
 
 .active:hover {
     color: #bd3f41;
-    border-bottom: 4px solid #283c4b;
+    border-bottom: 4px solid #2f4e66;
     padding: 10px 0px;
 }

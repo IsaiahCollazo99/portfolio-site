@@ -13,14 +13,18 @@ const ProjectItem = ({ project, display }) => {
         technologies
     } = project;
 
+    const redirectToHost = ( image ) => {
+        window.open(image);
+    }
+
     const getImagesList = () => {
         let imagesList = [];
 
         if(images.length) {
             imagesList = images.map((image, i) => {
                 return (
-                    <div key={i} className="imageWrapper">
-                        <img src={image} alt={name}/>
+                    <div key={i} className="imageWrapper" onClick={() => redirectToHost(image)} >
+                        <img src={image} alt={name} />
                     </div>
                 )
             })
@@ -32,18 +36,15 @@ const ProjectItem = ({ project, display }) => {
     }
 
     const imagesList = getImagesList();
+    const techList = technologies.map((tech, i) => {
+        return (
+            <li key={i}>{tech}</li>
+        )
+    })
 
     return (
         <div className={`projectItem ${display}`}>
-
-            <header>
-                <a href={deploymentUrl ? deploymentUrl : githubRepo} target="_blank" rel="noopener noreferrer">
-                    {name}
-                </a>
-                {deploymentUrl ? <a href={githubRepo} target="_blank" rel="noopener noreferrer">Github</a> : <p>Not deployed</p>}
-            </header>
-            
-            <div className="projectItemMain">
+            <div className="projectItemImages">
                 {/* maybe float left instead of div */}
                 {images.length ? 
                     <Carousel>
@@ -51,11 +52,29 @@ const ProjectItem = ({ project, display }) => {
                     </Carousel> : 
                     imagesList
                 }
-
-                <p className="projectDesc">
-                    {description}
-                </p>
             </div>
+
+            <div className="projectItemInfo">
+                <header>
+                    <p>{name}</p>
+                    <p>|</p>
+                    {deploymentUrl ? 
+                        <a href={deploymentUrl} target="_blank" rel="noopener noreferrer">
+                            Live Site
+                        </a> :
+                        null}
+                    <a href={githubRepo} target="_blank" rel="noopener noreferrer">
+                        Github
+                    </a>
+                </header>
+
+                <p className="projectItemDesc">{description}</p>
+
+                <ul className="projectItemTechnologies">
+                    {techList}
+                </ul>
+            </div>
+
         </div>
     )
 }
