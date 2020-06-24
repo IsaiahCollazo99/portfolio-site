@@ -2,6 +2,7 @@
   font-family: 'Advent Pro', sans-serif;
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 body {

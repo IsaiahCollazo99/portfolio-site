@@ -11,7 +11,7 @@
     color: white;
     font-family: 'Raleway', sans-serif;
     z-index: 100;
-    background-color: #7400B8;
+    background-color: #28503F;
     align-items: center;
 }
 
@@ -21,14 +21,12 @@
     justify-content: space-evenly;
     width: 30%;
     align-self: center;
-    background-color: #7400B8;
 }
 
 .headerRight {
     width: 30%;
     display: flex;
     align-self: center;
-    background-color: #7400B8;
     border-radius: 20px;
 }
 
@@ -42,10 +40,11 @@
     font-weight: bold;
     font-size: 32px;
     margin-bottom: 5px;
+    color: white;
 }
 
 .headerJob {
-    color: #0AFFBA;
+    color: #e75557;
 }
 
 .headerLogo {
@@ -55,14 +54,6 @@
 
 .noDecoration {
     text-decoration: none;
-}
-
-.white {
-    color: #FFFFFF;
-}
-
-.grey {
-    color: #7400B8;
 }
 
 @media only screen and (max-width: 1550px) {

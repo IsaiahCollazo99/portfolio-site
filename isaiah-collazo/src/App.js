@@ -36,7 +36,7 @@ function App() {
         </Route>
 
         <Route exact path={"/contact"}>
-          <Contact />>
+          <Contact />
         </Route>
       </Switch>
     </div>

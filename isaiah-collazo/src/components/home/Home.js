@@ -6,9 +6,9 @@ const Home = () => {
     return (
         <div className="homePageContainer">
             <div className="aboutMe">
-                <div className="aboutMePic">
-                    <a href="https://www.instagram.com/theycallme_zay_/" target="_blank"><img src={isaiah} alt="isaiah" className="aboutMeImg" /></a>
-                </div>
+                <a href="https://www.instagram.com/theycallme_zay_/" target="_blank">
+                    <img src={isaiah} alt="isaiah" className="aboutMeImg" />
+                </a>
 
                 <div className="aboutMeText">
                     <h1 className="aboutMeTitle">This is me</h1>
