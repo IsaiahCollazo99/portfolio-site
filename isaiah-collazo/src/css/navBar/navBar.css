@@ -1,4 +1,5 @@
 .mainNav {
+    align-self: center;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -15,8 +16,8 @@
 
 .navLink {
     color: white;
-    background-color: #D96675;
-    border-bottom: 4px solid #D96675;
+    background-color: #7400B8;
+    border-bottom: 4px solid #7400B8;
     padding: 10px 0;
     text-decoration: none;
     transition: 0.3s ease;
@@ -40,16 +41,16 @@
 .navLink:hover {
     border-bottom: 4px solid #ffffff;
     padding: 6px 0;
-    color: #8A333B;
+    color: #00c08a;
 }
 
 .active {
-    color: #AEAEAE;
+    color: #0AFFBA;
     animation: none;
 }
 
 .active:hover {
-    color: #AEAEAE;
-    border-bottom: 4px solid #D96675;
+    color: #0AFFBA;
+    border-bottom: 4px solid #4EA8DE;
     padding: 10px 0px;
 }

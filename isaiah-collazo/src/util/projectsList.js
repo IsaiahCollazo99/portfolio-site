@@ -10,7 +10,12 @@ export default {
         `,
         deploymentUrl: "https://flutter-twitter.netlify.app/",
         githubRepo: "https://github.com/IsaiahCollazo99/Flutter",
-        images: ["https://i.imgur.com/GqHVbku.png"],
+        images: [
+            "https://i.imgur.com/GqHVbku.png",
+            "https://i.imgur.com/qN3Q9I8.png",
+            "https://i.imgur.com/SFi8Q4p.png",
+            "https://i.imgur.com/DoseNxi.png"
+        ],
         technologies: [
             "ReactJS",
             "Express",

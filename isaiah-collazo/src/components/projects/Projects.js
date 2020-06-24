@@ -6,9 +6,17 @@ import '../../css/projects/projects.css';
 const Projects = () => {
     const getProjectComponents = () => {
         const projectListComponent = [];
+        let i = 0;
         for(let key in projectsList) {
             const projectObj = projectsList[key];
-            projectListComponent.push(<ProjectItem project={projectObj} key={key}/>);
+            let display;
+            if(i % 2 === 0) {
+                display = "regular";
+            } else {
+                display = "reverse";
+            }
+            projectListComponent.push(<ProjectItem project={projectObj} key={key} display={display}/>);
+            i++;
         }
         return projectListComponent;
     }

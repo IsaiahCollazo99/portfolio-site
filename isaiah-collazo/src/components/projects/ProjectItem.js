@@ -3,7 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import '../../css/projects/projectItems.css';
 
-const ProjectItem = ({ project }) => {
+const ProjectItem = ({ project, display }) => {
     const {
         name,
         description,
@@ -21,7 +21,6 @@ const ProjectItem = ({ project }) => {
                 return (
                     <div key={i} className="imageWrapper">
                         <img src={image} alt={name}/>
-                        <p className="legend">{i + 1}</p>
                     </div>
                 )
             })
@@ -35,8 +34,16 @@ const ProjectItem = ({ project }) => {
     const imagesList = getImagesList();
 
     return (
-        <div className="projectItem">
-            <div className="projectItemLeft">
+        <div className={`projectItem ${display}`}>
+
+            <header>
+                <a href={deploymentUrl ? deploymentUrl : githubRepo} target="_blank" rel="noopener noreferrer">
+                    {name}
+                </a>
+                {deploymentUrl ? <a href={githubRepo} target="_blank" rel="noopener noreferrer">Github</a> : <p>Not deployed</p>}
+            </header>
+            
+            <div className="projectItemMain">
                 {/* maybe float left instead of div */}
                 {images.length ? 
                     <Carousel>
@@ -44,15 +51,6 @@ const ProjectItem = ({ project }) => {
                     </Carousel> : 
                     imagesList
                 }
-            </div>
-
-            <div className="projectItemRight">
-                <header>
-                    <a href={deploymentUrl ? deploymentUrl : githubRepo} target="_blank" rel="noopener noreferrer">
-                        {name}
-                    </a>
-                    {deploymentUrl ? <a href={githubRepo} target="_blank" rel="noopener noreferrer">Github</a> : <p>Not deployed</p>}
-                </header>
 
                 <p className="projectDesc">
                     {description}

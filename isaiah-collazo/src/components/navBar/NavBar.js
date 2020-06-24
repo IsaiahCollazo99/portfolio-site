@@ -8,7 +8,7 @@ const NavBar = () => {
         <nav className="mainNav">
             <div className="navLinkContainer">
                 <NavLink exact to="/" className="navLink">ME</NavLink>
-                <NavLink exact to="/projects" className="navLink">PROJECTS</NavLink>
+                <NavLink exact to="/projects" className="navLink">MY WORK</NavLink>
                 <NavLink to="/contact" className="navLink">CONTACT</NavLink>
                 <a className="navLink lastNav" href={resume} target="_blank">RESUME</a>
             </div>
