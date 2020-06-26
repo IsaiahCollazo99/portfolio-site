@@ -6,26 +6,26 @@
     flex-direction: row;
     position: sticky;
     top: 0;
-    margin-bottom: 25px;
     justify-content: space-between;
     color: white;
     font-family: 'Raleway', sans-serif;
     z-index: 100;
     background-color: #2f4e66;
     align-items: center;
+    justify-self: start;
+    align-self: start;
 }
 
 .headerLeft {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    display: grid;
     width: 30%;
     align-self: center;
+    justify-content: center;
 }
 
 .headerRight {
-    width: 30%;
-    display: flex;
+    width: 40%;
+    display: grid;
     align-self: center;
     border-radius: 20px;
 }
@@ -34,6 +34,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+.headerText :first-child {
+    width: 100%;
 }
 
 .headerName {
@@ -41,6 +47,7 @@
     font-size: 32px;
     margin-bottom: 5px;
     color: white;
+    width: 100%;
 }
 
 .headerJob {
@@ -50,42 +57,85 @@
 .headerLogo {
     width: 100px;
     border-radius: 25px;
+    grid-row: 1 / 2;
+    float: right;
+    margin-right: 10px;
 }
 
 .noDecoration {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 1550px) {
+@media only screen and (max-width: 1100px) {
+    .headerLeft {
+        width: 40%;
+    }
+
     .headerRight {
-      width: 40%;
+        width: 50%;
     }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 850px) {
+    .headerLeft {
+        width: 45%;
+    }
+
+    .headerRight {
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 770px) {
     .header {
-      font-size: 18px;
+        font-size: 20px;
+    }
+
+    .headerName {
+        font-size: 28px;
+    }
+
+    .headerLeft img {
+        width: 85px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .header {
+        padding: 5px;
+        justify-content: space-evenly;
+        font-size: 16px;
+    }
+
+    .headerLeft {
+        display: flex;
+        width: 35%;
+    }
+    
+    .headerLogo {
+        display: none;
     }
 
     .headerName {
         font-size: 24px;
     }
 
-    .headerLogo {
-        width: 75px;
-    }
-}
-
-@media only screen and (max-width: 1028px) {
     .headerRight {
-      width: 50%;
-    }
-
-    .headerLeft {
-        width: 40%;
+        width: 65%;
     }
 }
 
+@media only screen and (max-width: 450px) {
+    .header {
+        font-size: 12px;
+    }
+
+    .headerName {
+        font-size: 16px;
+    }
+}
+
+/* 
 @media only screen and (max-width: 590px) {
     .header {
         font-size: 12px;
@@ -108,4 +158,4 @@
     .headerRight {
         width: 67%;
     }
-}
+} */

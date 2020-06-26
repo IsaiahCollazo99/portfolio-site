@@ -46,7 +46,6 @@ const ProjectItem = ({ project, display }) => {
     return (
         <div className={`projectItem ${display}`}>
             <div className="projectItemImages">
-                {/* maybe float left instead of div */}
                 {images.length ? 
                     <Carousel>
                         {imagesList}
@@ -57,11 +56,10 @@ const ProjectItem = ({ project, display }) => {
 
             <div className="projectItemInfo">
                 <header>
-                    <p>{name}</p>
-                    <p>|</p>
+                    <p className="projectItemName">{name}</p>
                     {deploymentUrl ? 
                         <a href={deploymentUrl} target="_blank" rel="noopener noreferrer">
-                            Live Site
+                            Live
                         </a> :
                         null}
                     <a href={githubRepo} target="_blank" rel="noopener noreferrer">

@@ -2,13 +2,18 @@
   font-family: 'Advent Pro', sans-serif;
   display: grid;
   min-height: 100vh;
+  max-height: fit-content;
   background-color: #1b272f;
   align-items: center;
   justify-content: center;
+  grid-template-rows: max-content;
+  width: 100%;
+  grid-template-columns: 1fr;
+  
 }
 
 body {
-	background-color: #F3F3F3;
+	background-color: #1b272f;
 }
 
 

@@ -127,14 +127,9 @@
     color: white;
     align-self: center;
     padding-bottom: 4px;
-}
-
-.projectItem header p {
-    margin-right: 15px;
-}
-
-.projectItem header p:nth-of-type(2) {
-    margin-left: 15px;
+    border-right: 3px solid white;
+    padding-right: 10px;
+    margin-right: 10px;
 }
 
 .projectItem a {
@@ -170,4 +165,208 @@
     justify-content: space-evenly;
     font-size: 20px;
     font-family: 'Raleway';
+    flex-wrap: wrap;
+}
+
+.projectItemTechnologies li {
+    margin: 0 5px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .projectItem {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .projectItem {
+        padding: 20px;
+    }
+    
+    .projectItem:not(.regular), .projectItem:not(.reverse) {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .projectItemDesc {
+        padding-top: 15px;
+        padding-bottom: 25px;
+    }
+
+    .projectItemTechnologies {
+        margin-bottom: 25px;
+    }
+
+    .imageWrapper {
+        width: fit-content;
+    }
+
+    .carousel-root {
+        min-width: 600px;
+        max-width: 600px;
+        min-height: 300px;
+        max-height: 300px;
+        align-self: center;
+    }
+
+    .projectItem:not(.reverse) .carousel-root {
+        margin-right: 0;
+    }
+    
+    .projectItem:not(.regular) .carousel-root {
+        margin-left: 0;
+    }
+
+    .projectItem:not(.reverse) .error {
+        margin-right: 0;
+    }
+    
+    .projectItem:not(.regular) .error {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .projectItem header {
+        font-size: 20px;
+    }
+
+    .projectItem header p {
+        font-size: 20px;
+    }
+
+    .projectItemDesc {
+        font-size: 18px;
+    }
+
+    .projectItemTechnologies {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    /* .projectItem header {
+        font-size: 16px;
+    }
+
+    .projectItem header p {
+        font-size: 16px;
+    }
+
+    .projectItemDesc {
+        font-size: 12px;
+    }
+     */
+    .carousel-root {
+        min-width: 500px;
+        max-width: 500px;
+        min-height: 250px;
+        max-height: 250px;
+    }
+
+    .projectItem .slider {
+        min-width: 500px;
+        max-width: 500px;
+        min-height: 250px;
+        max-height: 250px;
+    }
+
+    .imageWrapper {
+        min-width: 500px;
+        max-width: 500px;
+        min-height: 250px;
+        max-height: 250px;
+    }
+
+    .imageWrapper img {
+        min-width: 500px;
+        max-width: 500px;
+        min-height: 250px;
+        max-height: 250px;
+    }
+
+    .projectItem .error {
+        min-width: 500px;
+        max-width: 500px;
+        min-height: 250px;
+        max-height: 250px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .carousel-root {
+        min-width: 400px;
+        max-width: 400px;
+        min-height: 200px;
+        max-height: 200px;
+    }
+
+    .projectItem .slider {
+        min-width: 400px;
+        max-width: 400px;
+        min-height: 200px;
+        max-height: 200px;
+    }
+
+    .imageWrapper {
+        min-width: 400px;
+        max-width: 400px;
+        min-height: 200px;
+        max-height: 200px;
+    }
+
+    .imageWrapper img {
+        min-width: 400px;
+        max-width: 400px;
+        min-height: 200px;
+        max-height: 200px;
+    }
+
+    .projectItem .error {
+        min-width: 400px;
+        max-width: 400px;
+        min-height: 200px;
+        max-height: 200px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .projectItemTechnologies {
+        flex-wrap: wrap;
+    }
+    
+    .carousel-root {
+        min-width: 300px;
+        max-width: 300px;
+        min-height: 150px;
+        max-height: 150px;
+    }
+
+    .projectItem .slider {
+        min-width: 300px;
+        max-width: 300px;
+        min-height: 150px;
+        max-height: 150px;
+    }
+
+    .imageWrapper {
+        min-width: 300px;
+        max-width: 300px;
+        min-height: 150px;
+        max-height: 150px;
+    }
+
+    .imageWrapper img {
+        min-width: 300px;
+        max-width: 300px;
+        min-height: 150px;
+        max-height: 150px;
+    }
+
+    .projectItem .error {
+        min-width: 300px;
+        max-width: 300px;
+        min-height: 150px;
+        max-height: 150px;
+    }
 }
