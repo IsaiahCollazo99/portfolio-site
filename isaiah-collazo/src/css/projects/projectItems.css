@@ -245,18 +245,6 @@
 }
 
 @media only screen and (max-width: 650px) {
-    /* .projectItem header {
-        font-size: 16px;
-    }
-
-    .projectItem header p {
-        font-size: 16px;
-    }
-
-    .projectItemDesc {
-        font-size: 12px;
-    }
-     */
     .carousel-root {
         min-width: 500px;
         max-width: 500px;
