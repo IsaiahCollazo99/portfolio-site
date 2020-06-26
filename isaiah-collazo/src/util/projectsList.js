@@ -54,7 +54,11 @@ export default {
         `,
         deploymentUrl: "",
         githubRepo: "https://github.com/IsaiahCollazo99/Calculator",
-        images: [],
+        images: [
+            "https://i.imgur.com/JeSgSk5.png",
+            "https://i.imgur.com/BUOqiHF.png",
+            "https://i.imgur.com/KbHi6s4.png"
+        ],
         technologies: [
             "ReactJS"
         ]
@@ -72,7 +76,11 @@ export default {
         `,
         deploymentUrl: "",
         githubRepo: "https://github.com/IsaiahCollazo99/Our-Canvas",
-        images: [],
+        images: [
+            "https://i.imgur.com/4sR22i6.png",
+            "https://i.imgur.com/GZqIqRC.png",
+            "https://i.imgur.com/BsOFQ9b.png"
+        ],
         technologies: [
             "ReactJS",
             "NodeJS",
