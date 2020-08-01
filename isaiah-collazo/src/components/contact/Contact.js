@@ -7,7 +7,7 @@ import EmailForm from './EmailForm';
 const Contact = () => {
 
     const redirect = () => {
-        window.open("https://www.linkedin.com/in/isaiah-collazo-aa0188151/", "_blank");
+        window.open("https://www.linkedin.com/in/isaiahCollazo/", "_blank");
     }
     
     return (

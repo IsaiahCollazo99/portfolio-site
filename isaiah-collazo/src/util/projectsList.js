@@ -2,8 +2,7 @@ export default {
     flutter: {
         name: "Flutter",
         description: `
-            I was tasked with creating my version of a popular social media app, and with 
-            that challenge, Flutter was born. Flutter is a web app that takes inspiration
+            Flutter is a web app that takes inspiration
             from Twitter. On Flutter, a user can setup their own account, make new posts,
             search all user related data, interact with other users and browse the days 
             top news stories.
@@ -28,11 +27,11 @@ export default {
         name: "Tech Tonic",
         description: `
             A Twitter feed of top tech resources, opportunities, news. Tech Tonic provides
-            the user with the ability to search for any tech related tweets that fits them.
+            the user with the ability to search for tech related tweets that fit them.
             During the development process I was the technical lead, and was in charge of
-            implementing Twitter's API. Using express I set up a backend to make API calls,
-            and set up the structure for how the data is sent to the API, and the
-            functionality behind components that would need to interact with the API.
+            implementing Twitter's API. Using express I set up a proxy to make API calls,
+            and set up the structure for how the data is sent to the API; And developed the
+            functionality behind components interact with the API.
         `,
         deploymentUrl: "",
         githubRepo: "https://github.com/IsaiahCollazo99/ttnn",
