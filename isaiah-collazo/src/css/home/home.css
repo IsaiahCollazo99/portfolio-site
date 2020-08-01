@@ -76,12 +76,12 @@
     border-radius: 20px;
     background-color: #e75557;
     border: none;
-    transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.5s;
 }
 
 .homePageContainer .callToAction button:hover {
     cursor: pointer;
-    background-color: #ff292c;
+    background-color: #37A8FF;
 }
 
 @media only screen and (max-width: 1024px) {

@@ -30,12 +30,12 @@
 }
 
 .active {
-    color: #bd3f41;
+    color: #be7475;
     animation: none;
 }
 
 .active:hover {
-    color: #bd3f41;
+    color: #be7475;
     border-bottom: 4px solid #2f4e66;
     padding: 10px 0px;
 }
