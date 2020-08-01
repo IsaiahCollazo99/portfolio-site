@@ -5,13 +5,16 @@ import '../../css/contact/contact.css';
 import EmailForm from './EmailForm';
 
 const Contact = () => {
+
+    const redirect = () => {
+        window.open("https://www.linkedin.com/in/isaiah-collazo-aa0188151/", "_blank");
+    }
     
     return (
         <div className="contactContainer">
             <div className="contactPic">
-                <a href="https://www.linkedin.com/in/isaiah-collazo-aa0188151/" className="contactPicAnchor" target="_blank" rel="noopener noreferrer">
-                    <img src={isaiah} alt="isaiah"/>
-                </a>
+                <img src={isaiah} alt="isaiah" onClick={redirect}/>
+                
                 <div className="contactInfo">
 
                     <a href="mailto:isaiahramoncollazo@gmail.com" className="contactEmail" target="_blank" rel="noopener noreferrer">

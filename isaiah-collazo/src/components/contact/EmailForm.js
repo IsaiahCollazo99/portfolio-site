@@ -10,15 +10,15 @@ const EmailForm = () => {
         <form className="emailForm" autoComplete="off" action="https://formspree.io/mjvaklbn" method="POST" name="emailForm">
 
             <div className="userInfo">
-                <label for="name" className="nameLabel">Name: </label>
+                <label htmlFor="name" className="nameLabel">Name: </label>
                 <input type="text" {...useName} placeholder="Enter Your Name" name="name" required className="nameInput"/>
 
-                <label for="_replyto" className="emailLabel">Email: </label>
+                <label htmlFor="_replyto" className="emailLabel">Email: </label>
                 <input type="email" {...useEmail} placeholder="Enter Your Email" name="_replyto" required className="emailInput"/>
             </div>
 
             <div className="formMessage">
-                <label for="message">Message: </label>
+                <label htmlFor="message">Message: </label>
                 <textarea {...useMessage} placeholder="Enter Your Message" name="message" required rows="10" cols="30"/>
             </div>
 

@@ -22,14 +22,8 @@
     align-self: center;
 }
 
-.contactPicAnchor {
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
 .contactPic img {
-    max-width: 75%;
+    max-width: 35%;
     border: 3px solid #e75557;
     border-radius: 20px;
     transition: 0.3s ease-in-out;
@@ -37,6 +31,7 @@
 
 .contactPic img:hover {
     border-color: #37A8FF;
+    cursor: pointer;
 }
 
 .contactInfo {
@@ -126,7 +121,6 @@ label {
     font-family: 'Raleway';
     margin-bottom: 5px;
     margin-left: 5px;
-    letter-spacing: 2px;
 }
 
 input[type=submit] {
@@ -138,7 +132,7 @@ input[type=submit] {
     border-radius: 20px;
     background-color: #e75557;
     border: none;
-    transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.5s;
 }
 
 input[type=submit]:hover {
@@ -162,7 +156,6 @@ input[type="text"], input[type="email"], textarea {
     border-style: solid;
     border-radius: 20px;
     box-shadow: 3px 3px 5px rgba(66,66,66,.94);
-    letter-spacing: 2px;
     line-height: 130%;
     transition: ease-in-out 0.3s;
 }
