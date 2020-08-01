@@ -22,7 +22,7 @@ const Contact = () => {
                     </a>
                     
                     <div className="socialMedia">
-                        <a href="https://www.linkedin.com/in/isaiah-collazo-aa0188151/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/IsaiahCollazo" target="_blank" rel="noopener noreferrer">
                             <FaLinkedin className="icon" size="75px" color="#0077B5"/>
                         </a>
                         <a href="https://github.com/IsaiahCollazo99" target="_blank" rel="noopener noreferrer">
