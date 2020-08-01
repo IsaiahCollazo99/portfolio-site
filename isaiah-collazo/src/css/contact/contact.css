@@ -23,7 +23,7 @@
 }
 
 .contactPic img {
-    max-width: 35%;
+    max-width: 20em;
     border: 3px solid #e75557;
     border-radius: 20px;
     transition: 0.3s ease-in-out;
@@ -184,6 +184,10 @@ textarea {
         padding-left: 0;
     }
 
+    .contactPic img {
+        max-width: 35%;
+    }
+
     .emailForm {
         width: 80%;
         margin-top: 25px;
@@ -191,14 +195,6 @@ textarea {
 }
 
 @media only screen and (max-width: 950px) {
-    .contactPicAnchor {
-        width: 40%;
-    }
-
-    .contactPic img {
-        max-width: 100%;
-    }
-
     .contactEmail {
         font-size: 18px;
     }
@@ -223,8 +219,25 @@ textarea {
         padding-left: 20px;
     }
 
-    .contactPicAnchor {
-        width: 60%;
+    .contactPic img {
+        max-width: 20em;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .contactContainer {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .contactPic {
+        width: 80%;
+    }
+
+    .contactPic img {
+        max-width: 15em;
     }
 }
 
