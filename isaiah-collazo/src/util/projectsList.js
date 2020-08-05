@@ -23,46 +23,6 @@ export default {
         ]
     },
 
-    techTonic: {
-        name: "Tech Tonic",
-        description: `
-            A Twitter feed of top tech resources, opportunities, news. Tech Tonic provides
-            the user with the ability to search for tech related tweets that fit them.
-            During the development process I was the technical lead, and was in charge of
-            implementing Twitter's API. Using express I set up a proxy to make API calls,
-            and set up the structure for how the data is sent to the API; And developed the
-            functionality behind components interact with the API.
-        `,
-        deploymentUrl: "",
-        githubRepo: "https://github.com/IsaiahCollazo99/ttnn",
-        images: [],
-        technologies: [
-            "ReactJS",
-            "Express",
-            "NodeJS",
-            "Twitter API"
-        ]
-    },
-
-    calculator: {
-        name: "Calculator",
-        description: `
-            A simple recreation of the popular Calculator app for your browser. I was
-            able to create my own algorithm for order of operations including all operations
-            up to exponents.
-        `,
-        deploymentUrl: "",
-        githubRepo: "https://github.com/IsaiahCollazo99/Calculator",
-        images: [
-            "https://i.imgur.com/JeSgSk5.png",
-            "https://i.imgur.com/BUOqiHF.png",
-            "https://i.imgur.com/KbHi6s4.png"
-        ],
-        technologies: [
-            "ReactJS"
-        ]
-    },
-
     ourCanvas: {
         name: "Our Canvas",
         description: `
@@ -86,6 +46,67 @@ export default {
             "Express",
             "SQL",
             "Multer"
+        ]
+    },
+
+    calculator: {
+        name: "Calculator",
+        description: `
+            A simple recreation of the popular Calculator app for your browser. I was
+            able to create my own algorithm for order of operations including all operations
+            up to exponents.
+        `,
+        deploymentUrl: "http://IsaiahCollazo99.github.io/Calculator",
+        githubRepo: "https://github.com/IsaiahCollazo99/Calculator",
+        images: [
+            "https://i.imgur.com/JeSgSk5.png",
+            "https://i.imgur.com/BUOqiHF.png",
+            "https://i.imgur.com/KbHi6s4.png"
+        ],
+        technologies: [
+            "ReactJS"
+        ]
+    },
+
+    hangman: {
+        name: "Hangman",
+        description: `
+            Remaking of the Hangman game. Uses react to build a simple, but addicting version
+            of hangman. The user can select between 6 different categories, and 4 different
+            difficulties. Using those choices an algorithm randomly chooses a word from a 
+            defined dictionary, and generates the board for the user to play. After the game is over
+            the web app keeps track of the users current win/loss count.
+        `,
+        deploymentUrl: "IsaiahCollazo99.github.io/react-hangman",
+        githubRepo: "github.com/IsaiahCollazo99/react-hangman",
+        images: [
+            "https://i.imgur.com/Ozx0cCu.png",
+            "https://i.imgur.com/CTc1a39.png",
+            "https://i.imgur.com/mmPSv3P.png",
+            "https://i.imgur.com/0hD8Rhv.png",
+        ],
+        technologies: [
+            "ReactJS"
+        ]
+    },
+
+    techTonic: {
+        name: "Tech Tonic",
+        description: `
+            A Twitter feed of top tech resources, opportunities, news. Tech Tonic provides
+            the user with the ability to search for tech related tweets that fit them.
+            During the development process I was the technical lead, and was in charge of
+            implementing Twitter's API. Using express I set up a proxy to make API calls,
+            and set up the structure for how the data is sent to the API; And developed the
+            functionality behind components interact with the API.`,
+        deploymentUrl: "",
+        githubRepo: "https://github.com/IsaiahCollazo99/ttnn",
+        images: [],
+        technologies: [
+            "ReactJS",
+            "Express",
+            "NodeJS",
+            "Twitter API"
         ]
     }
 }
