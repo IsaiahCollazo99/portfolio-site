@@ -1,5 +1,7 @@
+import { Button } from '@material-ui/core';
 import React from 'react';
 import { useInput } from '../../util/customHooks/custhomHooks';
+import CustomTextField from '../CustomTextField';
 
 const EmailForm = () => {
     const useName = useInput("");
@@ -10,19 +12,58 @@ const EmailForm = () => {
         <form className="emailForm" autoComplete="off" action="https://formspree.io/mjvaklbn" method="POST" name="emailForm">
 
             <div className="userInfo">
-                <label htmlFor="name" className="nameLabel">Name: </label>
-                <input type="text" {...useName} placeholder="Enter Your Name" name="name" required className="nameInput"/>
+                <CustomTextField 
+                    type="text" 
+                    {...useName} 
+                    placeholder="Enter Your Name" 
+                    name="name" 
+                    label="Name"
+                    variant="outlined"
+                    InputLabelProps={{
+                        shrink: true,
+                    }}
+                    style={{width: '45%'}}
+                    required 
+                />
 
-                <label htmlFor="_replyto" className="emailLabel">Email: </label>
-                <input type="email" {...useEmail} placeholder="Enter Your Email" name="_replyto" required className="emailInput"/>
+                <CustomTextField 
+                    type="email" 
+                    {...useEmail} 
+                    placeholder="Enter Your Email" 
+                    name="_replyto" 
+                    required 
+                    label="Email"
+                    variant="outlined"
+                    style={{width: '45%'}}
+                    InputLabelProps={{
+                        shrink: true,
+                    }}    
+                />
             </div>
 
-            <div className="formMessage">
-                <label htmlFor="message">Message: </label>
-                <textarea {...useMessage} placeholder="Enter Your Message" name="message" required rows="10" cols="30"/>
-            </div>
+            <CustomTextField 
+                {...useMessage} 
+                placeholder="Enter Your Message" 
+                name="message" 
+                required 
+                rows={10}
+                label="Message"
+                variant="outlined"
+                fullWidth
+                InputLabelProps={{
+                    shrink: true
+                }}
+                multiline
+            />
 
-            <input type="submit" value="Send Message"/>
+            <Button
+                variant="contained"
+                fullWidth
+                type="submit"
+                color="primary"
+            >
+                Send Message
+            </Button>
         </form>
     )
 }
