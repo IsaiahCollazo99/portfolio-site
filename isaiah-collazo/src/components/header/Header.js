@@ -3,10 +3,46 @@ import NavBar from '../navBar/NavBar';
 import logo from '../../assets/logo.png';
 import '../../css/header/header.css';
 import { Link } from 'react-router-dom';
+import { AppBar, makeStyles, useScrollTrigger } from '@material-ui/core';
 
-const Header = () => {
+const ElevationScroll = ({ children }) => {
+	const trigger = useScrollTrigger({
+	  disableHysteresis: true,
+	  threshold: 0
+	});
+  
+	return React.cloneElement(children, {
+	  elevation: trigger ? 4 : 0,
+	});
+}
+
+const useStyles = makeStyles(theme => ({
+    root: {
+        width: '100%',
+        padding: '10px 0',
+        fontSize: '24px',
+        display: 'flex',
+        flexDirection: 'row',
+        position: 'fixed',
+        top: 0,
+        justifyContent: 'space-between',
+        color: 'black',
+        fontFamily: 'Raleway',
+        zIndex: 100,
+        backgroundColor: '#f3f3f3',
+        alignItems: 'center',
+        justifySelf: 'start',
+        alignSelf: 'start',
+        height: '11vh',
+    }
+}))
+
+const Header = ( props ) => {
+    const classes = useStyles();
+
     return (
-        <div className="header">
+        <ElevationScroll {...props}>
+        <AppBar className={classes.root} id='header'>
             <div className="headerLeft">
                 <Link to="/"><img src={logo} alt="Logo" className="headerLogo" /></Link>
                 
@@ -23,7 +59,8 @@ const Header = () => {
             <div className="headerRight">
                 <NavBar />
             </div>
-        </div>
+        </AppBar>
+        </ElevationScroll>
     )
 }
 

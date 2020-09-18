@@ -1,4 +1,4 @@
-.header {
+.MuiAppBar-root {
     width: 100%;
     padding: 10px 0; 
     font-size: 24px;
@@ -81,16 +81,18 @@
 @media only screen and (max-width: 850px) {
     .headerLeft {
         width: 45%;
+        font-size: 20px;
     }
 
     .headerRight {
         width: 55%;
+        font-size: 20px;
     }
 }
 
 @media only screen and (max-width: 770px) {
-    .header {
-        font-size: 20px;
+    .headerLeft {
+        font-size: 16px;
     }
 
     .headerName {
@@ -100,13 +102,16 @@
     .headerLeft img {
         width: 85px;
     }
+
+    .headerRight{
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width: 650px) {
-    .header {
+    #header {
         padding: 5px;
         justify-content: space-evenly;
-        font-size: 16px;
         height: 8vh;
     }
 
@@ -129,13 +134,20 @@
 }
 
 @media only screen and (max-width: 450px) {
-    .header {
-        font-size: 12px;
+    #header {
         height: 6vh;
         padding: 5px 0;
     }
-
+    
+    .headerLeft {
+        font-size: 12px;
+    }
+    
     .headerName {
         font-size: 16px;
+    }
+
+    .headerRight {
+        font-size: 12px;
     }
 }
