@@ -311,6 +311,10 @@
 }
 
 @media only screen and (max-width: 450px) {
+    .projectItem header {
+        width: 75%;
+    }
+
     .projectItemTechnologies {
         flex-wrap: wrap;
     }
