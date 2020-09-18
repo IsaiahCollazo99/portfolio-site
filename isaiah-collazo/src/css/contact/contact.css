@@ -84,6 +84,10 @@
     justify-content: space-evenly;
 }
 
+.userInfo .MuiFormControl-root {
+    width: 45%;
+}
+
 .formMessage {
     display: flex;
     flex-direction: column;
@@ -102,8 +106,11 @@
 
 @media only screen and (max-width: 1175px) {
     .contactContainer {
+        margin-top: 1vh;
         flex-direction: column;
         align-items: center;
+        overflow-y: scroll;
+        align-self: start;
     }
 
     .contactPic {
@@ -132,17 +139,13 @@
 
 @media only screen and (max-width: 850px) {
     .userInfo {
-        display: flex;
         flex-direction: column;
     }
 
-    .userInfo input {
-        width: 96.5%;
-    }
-
-    .emailLabel {
-        margin-top: 25px;
-    }
+    .userInfo .MuiFormControl-root {
+        width: 100%;
+        margin: 10px 0;
+    }    
 
     .contactPic {
         flex-direction: column;
@@ -153,11 +156,9 @@
         max-width: 20em;
         height: auto;
     }
-}
 
-@media only screen and (max-width: 650px) {
-    .contactContainer {
-        margin-top: 100px;
+    .emailForm input {
+        width: 100%;
     }
 }
 

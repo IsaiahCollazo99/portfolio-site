@@ -22,7 +22,6 @@ const EmailForm = () => {
                     InputLabelProps={{
                         shrink: true,
                     }}
-                    style={{width: '45%'}}
                     required 
                 />
 
@@ -34,7 +33,6 @@ const EmailForm = () => {
                     required 
                     label="Email"
                     variant="outlined"
-                    style={{width: '45%'}}
                     InputLabelProps={{
                         shrink: true,
                     }}    
