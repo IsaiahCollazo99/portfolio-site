@@ -1,12 +1,18 @@
 import React from 'react';
 import isaiah from '../../assets/image_me.jpg';
 import '../../css/home/home.css';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
+import { Button } from '@material-ui/core';
 
 const Home = () => {
+    const history = useHistory();
 
     const directToTwitter = () => {
         window.open("https://twitter.com/IsaiahCollazo8");
+    }
+
+    const redirect = () => {
+        history.push("/projects");
     }
     
     return (
@@ -34,9 +40,14 @@ const Home = () => {
                     
                 </div>
             </div>
-            <Link to="/projects" className="callToAction">
-                <button>View My Work</button>
-            </Link>
+            <Button
+                variant="contained"
+                onClick={redirect}
+                color="primary"
+                className="callToAction"
+            >
+                View My Work
+            </Button>
         </div>
     )
 }

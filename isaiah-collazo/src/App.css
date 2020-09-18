@@ -6,7 +6,7 @@
   background-color: #f3f3f3;
   align-items: center;
   justify-content: center;
-  grid-template-rows: max-content;
+  grid-template-rows: 11vh 89vh;
   width: 100%;
   grid-template-columns: 1fr;
   
@@ -66,3 +66,14 @@ table {
 	border-spacing: 0;
 }
 
+@media only screen and (max-width: 650px) {
+	.App {
+		grid-template-rows: 8vh 92vh;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.App {
+		grid-template-rows: 6vh 94vh;
+	}
+}
