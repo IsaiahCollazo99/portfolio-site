@@ -3,7 +3,7 @@
   display: grid;
   min-height: 100vh;
   max-height: fit-content;
-  background-color: #1b272f;
+  background-color: #f3f3f3;
   align-items: center;
   justify-content: center;
   grid-template-rows: max-content;

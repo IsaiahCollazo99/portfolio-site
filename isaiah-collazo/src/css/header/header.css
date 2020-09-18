@@ -7,10 +7,10 @@
     position: fixed;
     top: 0;
     justify-content: space-between;
-    color: white;
+    color: black;
     font-family: 'Raleway', sans-serif;
     z-index: 100;
-    background-color: #2f4e66;
+    background-color: #f3f3f3;
     align-items: center;
     justify-self: start;
     align-self: start;
@@ -46,7 +46,7 @@
     font-weight: bold;
     font-size: 32px;
     margin-bottom: 5px;
-    color: white;
+    color: #23445C;
     width: 100%;
 }
 
@@ -55,7 +55,8 @@
 }
 
 .headerLogo {
-    width: 100px;
+    width: 75px;
+    height: 100px;
     border-radius: 25px;
     grid-row: 1 / 2;
     float: right;

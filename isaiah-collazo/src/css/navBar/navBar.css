@@ -15,27 +15,27 @@
 }
 
 .navLink {
-    color: white;
-    background-color: #2f4e66;
-    border-bottom: 4px solid #2f4e66;
+    color: #00478B;
+    background-color: #f3f3f3;
+    border-bottom: 4px solid #f3f3f3;
     padding: 10px 0;
     text-decoration: none;
     transition: 0.3s ease;
 }
 
 .navLink:hover {
-    border-bottom: 4px solid #ffffff;
+    border-bottom: 4px solid black;
     padding: 6px 0;
-    color: #37A8FF;
+    color: #089992;
 }
 
 .active {
-    color: #be7475;
+    color: #089992;
+    padding: 6px 0;
+    border-bottom: 4px solid black;
     animation: none;
 }
 
 .active:hover {
-    color: #be7475;
-    border-bottom: 4px solid #2f4e66;
-    padding: 10px 0px;
+    color: #089992;
 }

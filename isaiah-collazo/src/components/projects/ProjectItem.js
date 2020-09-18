@@ -56,12 +56,11 @@ const ProjectItem = ({ project, display }) => {
 
             <div className="projectItemInfo">
                 <header>
-                    <p className="projectItemName">{name}</p>
                     {deploymentUrl ? 
-                        <a href={deploymentUrl} target="_blank" rel="noopener noreferrer">
-                            Live
+                        <a href={deploymentUrl} target="_blank" rel="noopener noreferrer" className="projectItemName">
+                            {name}
                         </a> :
-                        null}
+                        <p className="projectItemName">{name}</p>}
                     <a href={githubRepo} target="_blank" rel="noopener noreferrer">
                         Github
                     </a>

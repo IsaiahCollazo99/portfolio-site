@@ -1,4 +1,42 @@
 export default {
+    triphikers: {
+        name: "Triphikers",
+        description: `
+            Triphikers is a portal that connects solo travellers together. Users are able to post
+            their upcoming trips or join exisiting ones. People who have already visited a city can
+            use our city search feature to place what we call a hotspot. A hotspot is a user created
+            location they recommend other people go if they travel to a city. Each city has it's own
+            unique list of hotspots.
+        `,
+        deploymentUrl: "https://triphikers.netlify.app",
+        githubRepo: "https://github.com/IsaiahCollazo99/triphikers",
+        images: [
+            "https://i.imgur.com/CbIn3Sn.png",
+            "https://i.imgur.com/t4pKgfh.png",
+            "https://i.imgur.com/W5gVcjx.png",
+            "https://i.imgur.com/cJqEMTG.png",
+            "https://i.imgur.com/UPSXxds.png",
+            "https://i.imgur.com/N7Xiks2.png",
+            "https://i.imgur.com/KzTCDH3.png",
+            "https://i.imgur.com/afKZ5JH.png",
+            "https://i.imgur.com/OV66Rtx.png",
+            "https://i.imgur.com/pC2UGxI.png",
+            "https://i.imgur.com/vSbWWLU.png",
+            "https://i.imgur.com/TpN5Fgu.png",
+            "https://i.imgur.com/kvjNyle.png",
+            "https://i.imgur.com/XdJm8L0.png",
+            "https://i.imgur.com/1Fjuk9P.png",
+            "https://i.imgur.com/EV6s7yE.png",
+            "https://i.imgur.com/aZNQWmM.png"
+        ],
+        technologies: [
+            "ReactJS",
+            "Express",
+            "NodeJS",
+            "Firebase",
+            "SQL"
+        ]
+    },
     flutter: {
         name: "Flutter",
         description: `
@@ -77,7 +115,7 @@ export default {
             defined dictionary, and generates the board for the user to play. After the game is over
             the web app keeps track of the users current win/loss count.
         `,
-        deploymentUrl: "IsaiahCollazo99.github.io/react-hangman",
+        deploymentUrl: "http://IsaiahCollazo99.github.io/react-hangman",
         githubRepo: "github.com/IsaiahCollazo99/react-hangman",
         images: [
             "https://i.imgur.com/Ozx0cCu.png",
