@@ -22,12 +22,12 @@
 }
 
 .projectItem .carousel-root {
-    border: 3px solid #29be7e;
+    border: 3px solid #089992;
     transition: 0.3s ease-in-out;
 }
 
 .projectItem .carousel-root:hover {
-    border-color: #37A8FF;
+    border-color: #0BE6DB;
 }
 
 .projectItem:not(.reverse) .carousel-root {
@@ -111,45 +111,37 @@
 
 .projectItem header {
     display: flex;
-    width: 100%;
+    width: 50%;
     font-family: 'Raleway';
     font-size: 24px;
     margin-bottom: 10px;
-    background-color: #345f80;
     border-radius: 20px;
     padding: 5px 0;
     transition: 0.3s ease;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    align-self: center;
 }
 
-.projectItem header p {
+.projectItemName {
     font-size: 24px;
-    color: white;
+    color: black;
     align-self: center;
-    padding-bottom: 4px;
-    border-right: 3px solid white;
-    padding-right: 10px;
-    margin-right: 10px;
+    padding-bottom: 5px;
 }
 
 .projectItem a {
     text-decoration: none;
-    color: #e75557;
-    border-bottom: 1px solid #345f80;
+    color: #00478B;
+    border-bottom: 1px solid white;
+    padding-bottom: 4px;
     transition: 0.3s ease-in-out;
-    padding: 5px 0;
-}
-
-.projectItem a:not(:nth-child(2)) {
-    margin-right: 15px;
-    margin-left: 15px;
 }
 
 .projectItem a:hover {
-    color: #ff292c;
+    color: #089992;
     padding-bottom: 1px;
-    border-bottom: 4px solid white;
+    border-bottom: 4px solid black;
 }
 
 .projectItemDesc {
