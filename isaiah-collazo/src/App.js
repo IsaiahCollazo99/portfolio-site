@@ -7,6 +7,7 @@ import Header from './components/header/Header';
 import Contact from './components/contact/Contact';
 import homeBackground from './assets/home_background.jpg';
 import contactBackground from './assets/contact_background.jpg';
+import Landing from './components/landing/Landing';
 
 function App() {
   const location = useLocation();
@@ -28,10 +29,14 @@ function App() {
   
   return (
     <div className="App">
-      <Header />
+      { location.pathname === "/" ? null : <Header /> }
 
       <Switch>
         <Route exact path={"/"}>
+          <Landing />
+        </Route>
+
+        <Route exact path={"/about"}>
           <Home />
         </Route>
 
