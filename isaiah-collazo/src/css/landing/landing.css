@@ -67,3 +67,124 @@
         opacity: 0;
     }
 }
+
+@media only screen and (max-width: 1550px) {
+    .landing h1 {
+        grid-template-columns: 23% 77%;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .landing h1 {
+        grid-template-columns: 20% 80%;
+        font-size: 70px;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (max-height: 1366px) {
+    .landing::before {
+        background: url("../../assets/landing_img_small.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .landing h1 {
+        grid-template-columns: 15% 85%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    
+    .landing h1 {
+        grid-template-columns: 15% 85%;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .landingInfo {
+        width: 75%
+    }
+    
+    .landing h1 {
+        grid-template-columns: 18% 82%;
+        font-size: 60px;
+    }
+
+    .landing button {
+        font-size: 24px;
+    }
+
+    .landing::before {
+        background: url("../../assets/landing_img_small.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media only screen and (max-width: 515px) {
+    .landing h1 {
+        grid-template-columns: 17% 83%;
+        font-size: 48px;
+    }
+
+    .landing::before {
+        background: url("../../assets/landing_img_smaller.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .landing h1 {
+        grid-template-columns: 8% 92%;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .landing h1 {
+        grid-template-columns: 15% 85%;
+        font-size: 36px;
+    }
+
+    .landing button {
+        font-size: 18px;
+    }
+
+    .landing::before {
+        background: url("../../assets/landing_img_smallest.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .landing h1 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (orientation: landscape) and (max-height: 420px) {
+    .landing h1 {
+        font-size: 36px;
+        grid-template-columns: 30% 60%;
+    }
+
+    .landingInfo {
+        padding: 50px 0;
+    }
+
+    .landing button {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (orientation: landscape) and (max-height: 420px) and (max-width: 600px) {
+    .landing h1 {
+        font-size: 28px;
+        grid-template-columns: 32% 68%;
+    }
+
+    .landingInfo {
+        padding: 50px 0;
+    }
+}
