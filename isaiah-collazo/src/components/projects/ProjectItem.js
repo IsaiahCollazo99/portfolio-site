@@ -1,6 +1,7 @@
 import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import logos from '../../util/logos';
 import '../../css/projects/projectItems.css';
 
 const ProjectItem = ({ project, display }) => {
@@ -39,7 +40,8 @@ const ProjectItem = ({ project, display }) => {
     
     const techList = technologies.map((tech, i) => {
         return (
-            <li key={i}>{tech}</li>
+            // <li key={i}>{tech}</li>
+            <img key={i} src={logos[tech]} alt={tech} title={tech} />
         )
     })
 

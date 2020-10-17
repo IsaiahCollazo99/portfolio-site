@@ -77,3 +77,9 @@ table {
 		grid-template-rows: 6vh 94vh;
 	}
 }
+
+@media only screen and (orientation: landscape) and (max-height: 420px) and (max-width: 850px) {
+	.App {
+		grid-template-rows: 6vh 94vh;
+	}
+}

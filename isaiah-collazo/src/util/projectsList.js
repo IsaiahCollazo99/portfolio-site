@@ -34,7 +34,8 @@ export default {
             "Express",
             "NodeJS",
             "Firebase",
-            "SQL"
+            "SQL",
+            "MaterialUI"
         ]
     },
     flutter: {
@@ -57,7 +58,8 @@ export default {
             "Express",
             "NodeJS",
             "Firebase",
-            "SQL"
+            "SQL",
+            "CSS"
         ]
     },
 
@@ -83,7 +85,7 @@ export default {
             "NodeJS",
             "Express",
             "SQL",
-            "Multer"
+            "CSS"
         ]
     },
 
@@ -102,7 +104,8 @@ export default {
             "https://i.imgur.com/KbHi6s4.png"
         ],
         technologies: [
-            "ReactJS"
+            "ReactJS",
+            "CSS"
         ]
     },
 
@@ -124,7 +127,8 @@ export default {
             "https://i.imgur.com/0hD8Rhv.png",
         ],
         technologies: [
-            "ReactJS"
+            "ReactJS",
+            "CSS"
         ]
     },
 
@@ -144,7 +148,7 @@ export default {
             "ReactJS",
             "Express",
             "NodeJS",
-            "Twitter API"
+            "CSS"
         ]
     }
 }

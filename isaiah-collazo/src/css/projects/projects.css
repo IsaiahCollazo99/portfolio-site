@@ -27,3 +27,9 @@
         margin-top: 20px;
     }
 }
+
+@media only screen and (orientation: landscape) and (max-height: 420px) {
+    .projectsPageContainer {
+        margin-top: 20px;
+    }
+}

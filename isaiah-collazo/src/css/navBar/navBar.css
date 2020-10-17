@@ -39,3 +39,37 @@
 .active:hover {
     color: #089992;
 }
+
+@media only screen and (orientation: landscape) and (max-height: 420px) {
+    .navLink {
+        padding: 3px 0;
+        border-bottom: 1px solid #f3f3f3;
+    } 
+
+    .navLink:hover {
+        padding: 2px 0;
+        border-bottom: 1px solid black;
+    }
+
+    .active {
+        padding: 2px 0;
+        border-bottom: 1px solid black;
+    };
+}
+
+@media only screen and (max-width: 320px) {
+    .navLink {
+        padding: 3px 0;
+        border-bottom: 1px solid #f3f3f3;
+    } 
+
+    .navLink:hover {
+        padding: 2px 0;
+        border-bottom: 1px solid black;
+    }
+
+    .active {
+        padding: 2px 0;
+        border-bottom: 1px solid black;
+    };
+}

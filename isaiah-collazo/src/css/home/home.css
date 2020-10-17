@@ -137,3 +137,40 @@
         overflow: scroll;
     }
 }
+
+@media only screen and (orientation: landscape) and (max-height: 800px) and (max-width: 850px) {
+    .homePageContainer {
+        margin-top: 350px;
+    }
+
+    .homePageContainer .callToAction {
+        font-size: 16px;
+    }
+
+    .aboutMe a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .aboutMeImg {
+        width: 50%;
+    }
+}
+
+@media only screen and (orientation: landscape) and (max-height: 390px) and (max-width: 850px) {
+    .homePageContainer {
+        margin-top: 400px;
+    }
+}
+
+@media only screen and (orientation: landscape) and (max-height: 340px) and (max-width: 850px) {
+    .homePageContainer {
+        margin-top: 450px;
+    }
+}
+
+@media only screen and (orientation: landscape) and (max-height: 290px) and (max-width: 850px) {
+    .homePageContainer {
+        margin-top: 500px;
+    }
+}
