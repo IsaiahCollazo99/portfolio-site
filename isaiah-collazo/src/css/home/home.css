@@ -17,7 +17,7 @@
     align-items: center;
 }
 
-.aboutMe a {
+.imgContainer {
     width: 30%;
 }
 
@@ -26,6 +26,7 @@
     border: 3px solid #00478B;
     border-radius: 20px;
     transition: 0.3s ease-in-out;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
 }
 
 .aboutMeImg:hover {
@@ -39,6 +40,7 @@
     padding: 25px;
     overflow: scroll;
     border-radius: 25px;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
 }
 
 .aboutMeText:hover .aboutMeTitle {
@@ -62,6 +64,15 @@
 .aboutMePgraph {
     line-height: 150%;
     font-size: 1em;
+}
+
+.em {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: 700;
 }
 
 .homePageContainer .callToAction {
@@ -91,7 +102,7 @@
         flex-direction: column;
     }
 
-    .aboutMe a {
+    .imgContainer {
         width: 50%;
         margin-bottom: 10px;
     }
@@ -147,7 +158,7 @@
         font-size: 16px;
     }
 
-    .aboutMe a {
+    .imgContainer{
         display: flex;
         justify-content: center;
     }

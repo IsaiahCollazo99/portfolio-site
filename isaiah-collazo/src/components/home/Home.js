@@ -18,7 +18,7 @@ const Home = () => {
     return (
         <div className="homePageContainer">
             <div className="aboutMe">
-                <a href="https://www.instagram.com/theycallme_zay_/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/theycallme_zay_/" target="_blank" rel="noopener noreferrer" className="imgContainer">
                     <img src={isaiah} alt="isaiah" className="aboutMeImg" />
                 </a>
 
@@ -27,15 +27,21 @@ const Home = () => {
                         This is me
                     </h1>
                     <div className="aboutMePgraph">
-                        For as long as I can remember I've been writing down ideas for apps and games that I wanted to make some day, not really knowing the path to get there.
-                        It wasn't until high school that I found the game development software, RPG Maker. That began my love for problem solving. RPG Maker was built using JavaScript and 
-                        I would spend hours just doing research on what they used and how to make certain things within the program more custom using the language. The games I built were
-                        always small but ambitious, and I just used them as learning experiences.
+                        Hi! I'm Isaiah, I'm a proud Puerto Rican born and raised in the beautiful NYC. I grew up loving video games, my brother and I would play everything together. 
+                        But that love for games grew, and in my later years of elementary school I started writing down ideas for games, and apps. I would even tape them up
+                        to my wall cause I was so proud of them. My favorite at the time was <span className="bold">Splatter</span> where you would play as different colors and 
+                        traverse through these crazy levels I would write down in extreme detail. 
                             <br />
                             <br />
-                        Using JavaScript with the program inclined me to look further into what the language could be used for, with that I found web development. By my senior year in high
-                        school it was all I could think about. The ability to think of an idea and be able to see it's creation in front of your eyes, slowly building as you go, that's my
-                        favorite part. I'm finally able to make that childhood dream a reality.
+                        It wasn't until my freshman year of high school that I would find RPG Maker MV. It opened up a whole new door for me, and within my first year of using it I had 
+                        "finished" my first game ever. <span className="bold">Amulet of Abell.</span> The game was <span className="em">horrible</span>, but I loved it. As I explored 
+                        MV I taught myself how to write in JavaScript, the programs language. Iused it to customize my games, and fell in love with it even more.
+                            <br />
+                            <br />
+                        By my senior year it was all I could think about. I now had the ability to think of an idea and see it's creation in front of my eyes. Watching my projects
+                        slowly evolve overtime was, and still is my favorite part. It's been 4 years since then and I attended school at Rochester Institute of Technology before I 
+                        found my home at <a href="https://pursuit.org" target="_blank" rel="noopener noreferrer">Pursuit</a>. I'm excited to not only develop my ideas, but also
+                        to contribute to the development of others. That's what I love about coding.
                     </div>
                     
                 </div>
