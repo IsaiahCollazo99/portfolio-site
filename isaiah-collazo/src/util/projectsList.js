@@ -63,6 +63,33 @@ export default {
         ]
     },
 
+    gamePlayList: {
+        name: "Game Play List",
+        description: `
+            Game Play List is a collection making, and keeping web app for all games. Using the RAWG API
+            games are fetched and displayed in cards for the user to interact with. With each of these
+            cards when the user is logged in they are able to add them to one of the 4 premade collections,
+            or into a collection they've made themselves. You can view these lists, and remove/rearrange
+            games as you see fit.
+        `,
+        deploymentUrl: "https://gameplaylist.netlify.app/",
+        githubRepo: "https://github.com/IsaiahCollazo99/GamePlayList",
+        images: [
+            "https://i.imgur.com/KGhX0QH.png",
+            "https://i.imgur.com/BTEe6WB.png",
+            "https://i.imgur.com/SzDf5S1.png",
+            "https://i.imgur.com/gXSc9ch.png",
+            "https://i.imgur.com/UUXiyj8.png",
+            "https://i.imgur.com/4cCfKCp.png",
+        ],
+        technologies: [
+            "ReactJS",
+            "Python",
+            "Django",
+            "CSS"
+        ]
+    },
+
     ourCanvas: {
         name: "Our Canvas",
         description: `
