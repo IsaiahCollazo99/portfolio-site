@@ -84,6 +84,7 @@ export default {
         ],
         technologies: [
             "ReactJS",
+            "Redux",
             "Python",
             "Django",
             "CSS"
