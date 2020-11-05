@@ -87,7 +87,9 @@ export default {
             "Redux",
             "Python",
             "Django",
-            "CSS"
+            "CSS",
+            "Firebase",
+            "MaterialUI"
         ]
     },
 

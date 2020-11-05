@@ -8,6 +8,8 @@ import Javascript from '../assets/logos/JS.svg';
 import HTML from '../assets/logos/HTML.svg';
 import CSS from '../assets/logos/CSS.svg';
 import Redux from '../assets/logos/Redux.svg';
+import Django from '../assets/logos/Django.svg';
+import Python from '../assets/logos/Python.png';
 
 const logos = {
     ReactJS,
@@ -19,7 +21,9 @@ const logos = {
     Javascript,
     HTML,
     CSS,
-    Redux
+    Redux,
+    Django,
+    Python
 }
 
 export default logos;
